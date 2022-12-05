@@ -27,7 +27,7 @@ mco:Publication a rdfs:Class ;
     vs:term_status "experimental" .
 
 mco:Laboratoire a rdfs:Class ;
-    rdfs:label "Instrument" ;
+    rdfs:label "Laboratoire" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
@@ -57,3 +57,7 @@ mco:AcommeAdress a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+mco:AcommeDomaine a rdf:Property ;
+    rdfs:label "AcommeDomaine" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
