@@ -7,7 +7,8 @@
 
     <body>
         <script>
-        d3.json("items.json",function(data){
+        
+        d3.json("items.json",function getData(data){
 
         var canvas = d3.select("body")
 
@@ -17,7 +18,7 @@
                     .append("p")
                     .attr("width",50)
                     .attr("height",50)
-                    .text(function(d) { 
+                    .text(function showItems(d) { 
                         console.log(d);
                         // return d["moc:nom"][0]["@value"] ;
 
