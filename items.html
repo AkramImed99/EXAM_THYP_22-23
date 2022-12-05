@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recherche scientifique</title>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+    </head>
+
+    <body>
+        <script>
+        d3.json("items.json",function(data){
+
+        var canvas = d3.select("body")
+
+        canvas.selectAll("p")
+                .data(data)
+                .enter()
+                    .append("p")
+                    .attr("width",50)
+                    .attr("height",50)
+                    .text(function(d) { 
+                        console.log(d);
+                        // return d["moc:nom"][0]["@value"] ;
+
+                        if(d["@type"][1]==="mco:Chercheur") 
+                        {
+                            return `Le id: ${d["o:id"]} , le nom: ${d["mco:AcommeNom"][0]["@value"]} ,l'adresse: ${d["mco:AcommeAdress"][0]["@value"]}  `;
+   
+                        }
+                        if(d["@type"][1]==="mco:Laboratoire") 
+                        {
+                        return `Le id: ${d["o:id"]} , le nom: ${d["mco:AcommeNom"][0]["@value"]}, le domaine: ${d["mco:AcommeDomaine"][0]["@value"]}, l'adresse: ${d["mco:AcommeAdress"][0]["@value"]}  `;
+                        }
+                        if(d["@type"][1]==="mco:Publication") {
+                            return `Le id: ${d["o:id"]} , le nom: ${d["mco:AcommeNom"][0]["@value"]},  `;
+
+                        }
+                        
+
+                    })
+    });
+        </script>
+
+    </body>
+
+</html>
