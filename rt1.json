@@ -1,0 +1,44 @@
+{
+    "o:label": "Publication",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/paris8-univ.chercher.fr\/onto\/mco#",
+            "vocabulary_label": "Recherchescientifique",
+            "local_name": "AcommeUniversite",
+            "label": "EstSortie"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/paris8-univ.chercher.fr\/onto\/mco#",
+            "vocabulary_label": "Recherchescientifique",
+            "local_name": "CreePar",
+            "label": "CreePar"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/paris8-univ.chercher.fr\/onto\/mco#",
+            "vocabulary_label": "Recherchescientifique",
+            "local_name": "AcommeNom",
+            "label": "AcommeNom"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "https:\/\/paris8-univ.chercher.fr\/onto\/mco#",
+        "vocabulary_label": "Recherchescientifique",
+        "local_name": "Publication",
+        "label": "Publication"
+    }
+}
