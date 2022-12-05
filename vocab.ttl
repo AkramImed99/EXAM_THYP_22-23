@@ -52,3 +52,8 @@ mco:AcommeLaboratoire a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+mco:AcommeAdress a rdf:Property ;
+    rdfs:label "AcommeAdress" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
